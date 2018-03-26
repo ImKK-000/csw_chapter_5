@@ -1,0 +1,14 @@
+{
+  "name": "csw",
+  "version": "1.0.0",
+  "description": "Client and Server",
+  "main": "index.js",
+  "author": "Nattakit Boonyang",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "nodemon": "^1.17.2"
+  }
+}
