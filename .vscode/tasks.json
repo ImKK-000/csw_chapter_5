@@ -6,7 +6,7 @@
     {
       "label": "Nodemon",
       "type": "shell",
-      "command": "npx nodemon server.js",
+      "command": "npx nodemon server.js --exec babel-node --presets=env",
       "problemMatcher": [],
       "group": {
         "kind": "build",

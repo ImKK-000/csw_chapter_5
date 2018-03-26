@@ -1,18 +1,15 @@
-var express = require('express')
-var app = express()
+import express from 'express'
 
-app.use(express.static('./public'));
-app.set('views', './views')
-app.set('view engine', 'ejs')
-
-app.get('/', function(req, res) {
-  res.send('ok')
-})
-
-app.get('/fruit', function(req, res) {
-  res.render('fruit', {
-    fruits: ['banana', 'apple']
+express()
+  .use(express.static('./public'))
+  .set('views', './views')
+  .set('view engine', 'ejs')
+  .get('/', (req, res) => {
+    res.send('ok')
   })
-})
-
-app.listen(8000)
+  .get('/fruit', (req, res) => {
+    res.render('fruit', {
+      fruits: ['banana', 'apple']
+    })
+  })
+  .listen(8000)
