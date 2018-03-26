@@ -6,5 +6,11 @@
     </li>
     <%});%>
 </ul>
+<img src="/images/img1.jpg" alt="image1" width="150" height="100">
+<img src="/images/img2.jpg" alt="image1" width="150" height="100">
+
+<%for (var i = 1; i <= 2; i++) {%>
+<img src="/images/img<%=i%>.jpg" alt="image<%=i%>" width="150" height="100">
+<%}%>
 
 </html>
